@@ -13,6 +13,13 @@ stage('Jenkins collector'){
 	sh 'curl -X GET http://18.189.13.82:8080/api/json?pretty=true --user admin:111467e48bd253de113a2db9642f58eb09'
 		} 
 	}
+
+stage('jenkins_collect'){
+ steps{
+sh 'curl --user admin:111467e48bd253de113a2db9642f58eb09 https://18.189.13.82:8080/job/jenkins/api/xml?xpath=/*/lastFailedBuild/number'
+}
+}
+
 }
 
 }
