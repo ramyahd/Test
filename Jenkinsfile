@@ -5,8 +5,9 @@ stages{
 
 stage('Jenkins job'){
 steps{
+scripts{
 jenkins-connector()
-     }
+     }}
 }
 }
 
