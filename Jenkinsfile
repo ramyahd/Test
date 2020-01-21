@@ -16,7 +16,7 @@ stage('Jenkins collector'){
 
 stage('jenkins_collect'){
  steps{
-sh 'curl --user admin:111467e48bd253de113a2db9642f58eb09 https://18.189.13.82:8080/job/jenkins/api/xml?xpath=/*/lastFailedBuild/number'
+sh ' curl -s http://18.189.13.82:8080/job/jenkins/lastBuild/api/json --user admin:111467e48bd253de113a2db9642f58eb09'
 }
 }
 
