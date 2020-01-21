@@ -1,0 +1,2 @@
+CRUMB=$(curl -s 'http://18.189.13.82:8080/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,":",//crumb)' -u admin:admin)
+curl -s -XPOST 'http://18.189.13.82:8080/createItem?name=yourJobName' -u admin:admin --data-binary @mylocalconfig.xml -H "$CRUMB" -H "Content-Type:text/xml"
