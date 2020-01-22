@@ -7,8 +7,8 @@ stages{
 stage('Jenkins job'){
 steps{
 
-curl -X POST http://${username}@${url}/job/${job}/build
-curl -XGET http://${url}/checkJobName?value=${NewJob} --user ${username}
+sh 'curl -X POST http://${username}@${url}/job/${job}/build \
+curl -XGET http://${url}/checkJobName?value=${NewJob} --user ${username}'
 
 }
 }
