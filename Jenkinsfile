@@ -15,7 +15,7 @@ sh 'curl -XGET http://${url}/checkJobName?value=${NewJob} --user ${username}'
 
 
 stage('Test'){
-steps{sh 'sh run.sh'}
+steps{sh 'sh script.sh'}
 }
 
 stage('Jenkins collector'){

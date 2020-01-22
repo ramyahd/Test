@@ -1,0 +1,1 @@
+curl -s -XPOST http://${url}/createItem?name=${NewJob} --data-binary @config.xml -H "Content-Type:text/xml" --user ${username}
