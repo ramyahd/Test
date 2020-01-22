@@ -1,2 +1,3 @@
 curl -X POST http://${username}@${url}/job/${job}/build 
-curl -XGET http://${url}/checkJobName?value=${NewJob} --user ${username}
+var=$(curl -XGET http://${url}/checkJobName?value=${NewJob} --user ${username})
+echo $var
