@@ -1,11 +1,12 @@
 /*@Library('library')_*/
+
 pipeline{
 agent any
 stages{
 
 stage('Jenkins job'){
 steps{
-sh 'curl -X POST http://admin:111467e48bd253de113a2db9642f58eb09@18.189.13.82:8080/job/jenkins/build'
+sh 'curl -X POST http://admin:111467e48bd253de113a2db9642f58eb09@18.189.13.82:8080/job/$job/build'
 }
 }
 stage('Jenkins collector'){
