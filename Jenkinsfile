@@ -15,7 +15,7 @@ curl --request POST \
   --header 'cache-control: no-cache' \
   --header 'content-type: application/json' \
   --header 'postman-token: f366c78d-74ae-6ced-282c-eb56e57292ad' \
-  --data '{\r\n   "project_name": "EDN250",\r\n    "project_typeKey": "software",\r\n   "project_lead": "ashnim"\r\n}\r\n'
+  --data '{\r\n   "create": "true",\r\n   "project_name": "EDN250",\r\n    "project_typeKey": "software",\r\n   "project_lead": "ashnim"\r\n}\r\n'
   '''
 }
 }
